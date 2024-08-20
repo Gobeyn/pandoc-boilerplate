@@ -26,6 +26,7 @@ natbiboptions: |
     numbers,square,sort&compress
     ```
 biblio-style: unsrtnat
+bibliography: main.bib
 header-includes: |
     ```{=latex}
     % Macros

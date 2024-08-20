@@ -45,6 +45,7 @@ replace 'sec' with 'eq' for equations, 'fig' for figures, etc.
 - Images can be includes with \!\[caption\]\(path/to/image\)\{\#fig:foo .class width=50\% height=50\%\}. The first brackets
 give a caption to the image. The second contains the file path to the image we want to display and the last brackets define the
 label for the figure used to refer to it, along with `css` type styling, for instance, to size the image.
+- In the YAML metadata the `bibliography` field points to the `*.bib` file for the project and is needed for completion with Neovim.
 
 ## Makefile documentation
 

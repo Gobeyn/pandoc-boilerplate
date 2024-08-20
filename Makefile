@@ -24,4 +24,4 @@ $(PDF_FILE): $(TEX_FILE)
 clean:
 	rm $(TEX_FILE) $(PDF_FILE)
 # Phony targets
-.PHONY: clean
+.PHONY: all clean
