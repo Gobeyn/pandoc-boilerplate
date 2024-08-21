@@ -24,9 +24,13 @@ $ make clean
 
 ## Files
 
-The two files that should be edited are the `main.md` and `main.bib` files, the former for writing the document in the Markdown language and 
-the latter for `bibtex` references.
-
+The project is structured so it can be separated into multiple `*.md` files. These are stored in the `./markdown/` folder. In that folder there is a 
+`0_metadata.md` file, the zero is front is required so the file always ends up front when globbing the directory to concatenate the `*.md` files in 
+the directory. Similarly, the separate sections of the documents should follow the format `section.INT.md`. The order of the `INT` will determine the 
+order in which these files are concatenated and hence the order of the sections in the final document. Inside the `./markdown/section_1.md` you will see
+an additional metadata part that tells us where the bibliography is located, this is only required for text completion of citations with NeoVim. 
+The citations are stored in the `references.bib` file and follow the `bibtex` reference format.
+ 
 ## Figures
 
 Figures are assumed to be placed in the `figures` folder. For pixel based graphics, it is recommended to use PNG files (300 dpi). For vector 
@@ -34,8 +38,8 @@ graphics, use PDF files.
 
 ## Citations
 
-Citations should be contained in the `main.bib` file following the `bibtex` format, which is readily available for most research papers listed on 
-[Google scholar](https://scholar.google.be/).
+Citations should be contained in the `references.bib` file following the `bibtex` format, which is readily available for 
+most research papers listed on [Google scholar](https://scholar.google.be/).
 
 ## Notes
 
