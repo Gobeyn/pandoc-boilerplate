@@ -25,9 +25,9 @@ $ make clean
 ## Files
 
 The project is structured so it can be separated into multiple `*.md` files. These are stored in the `./markdown/` folder. In that folder there is a 
-`0_metadata.md` file, the zero is front is required so the file always ends up front when globbing the directory to concatenate the `*.md` files in 
-the directory. Similarly, the separate sections of the documents should follow the format `section.INT.md`. The order of the `INT` will determine the 
-order in which these files are concatenated and hence the order of the sections in the final document. Inside the `./markdown/section_1.md` you will see
+`00_metadata.md` file, the zeroes is front is required so the file always ends up front when globbing the directory to concatenate the `*.md` files in 
+the directory. Similarly, the separate sections of the documents should follow the format `AB_section.md`. The value `AB` determines the order in which
+these files are concatenated and hence the order of the sections in the final document. Inside the `./markdown/01_section.md` you will see
 an additional metadata part that tells us where the bibliography is located, this is only required for text completion of citations with NeoVim. 
 The citations are stored in the `references.bib` file and follow the `bibtex` reference format.
  
