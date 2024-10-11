@@ -44,7 +44,8 @@ most research papers listed on [Google scholar](https://scholar.google.be/).
 ## Notes
 
 - To create labels for sections, equations, figures, etc. use \{\#sec:foo\}, and to reference said label use \[\@sec:foo\], naturally,
-replace 'sec' with 'eq' for equations, 'fig' for figures, etc.
+replace 'sec' with 'eq' for equations, 'fig' for figures, 'tbl' for tables etc. 
+- For table caption we write 'Table: CAPTION' under the markdown table.
 - Citations follow the same format, \[@foo\] where 'foo' is the name given to the citation in the `main.bib` file.
 - Images can be includes with \!\[caption\]\(path/to/image\)\{\#fig:foo .class width=50\% height=50\%\}. The first brackets
 give a caption to the image. The second contains the file path to the image we want to display and the last brackets define the
@@ -55,3 +56,7 @@ label for the figure used to refer to it, along with `css` type styling, for ins
 
 - Quick reference to [Automatic variables](https://www.gnu.org/software/make/manual/make.html#Automatic-Variables)
 - Quick reference to [Text Functions](https://www.gnu.org/software/make/manual/html_node/Text-Functions.html)
+
+## Notes
+
+- We can replace the whole ordering of markdown files by using the `include-files` lua-filter. 
